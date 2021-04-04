@@ -1,0 +1,18 @@
+$blue: #157fda;
+$green: #39b49b;
+$gray: #aaa;
+$d-blue: #0060b1;
+
+.d-blue {
+    background-color: $d-blue;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}

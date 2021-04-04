@@ -1,0 +1,6 @@
+@for $i from 12 through 1 {
+    .col-#{$i} {
+        width: 100% / $i;
+        max-width: 100% / $i;
+    }
+}
