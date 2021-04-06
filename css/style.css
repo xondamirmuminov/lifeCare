@@ -108,6 +108,7 @@ body {
   align-items: center;
   background-color: white;
   padding: 22px;
+  position: relative;
   padding-left: 30px;
 }
 
@@ -173,6 +174,7 @@ body {
   background-color: #157fda;
   height: 70px;
   padding-left: 50px;
+  position: relative;
 }
 
 .header__list {
@@ -231,6 +233,10 @@ body {
   border: 0;
   color: black;
   font-size: 18px;
+}
+
+.header__inp-btn a {
+  color: black;
 }
 
 .home {
@@ -311,25 +317,31 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   text-align: right;
-  bottom: 0;
+  bottom: 30px;
   right: 0;
   margin-right: 20px;
+  transition: 2s;
+}
+
+.fixed-btn:hover {
+  background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
 }
 
 .about {
   margin-top: 70px;
 }
 
-.about__heading {
+.heading {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
-title {
+.title {
   margin-top: 20px;
-  font-size: 36px;
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
   color: #313131;
 }
 
@@ -384,6 +396,23 @@ title {
   margin: 2px;
   width: 100%;
   margin: 7px;
+  cursor: pointer;
+  border: 0;
+}
+
+.default-btn--white {
+  text-decoration: none;
+  color: #39b49b;
+  font-size: 18px;
+  background: white;
+  padding: 14px 0px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 2px;
+  width: 60%;
+  border: 1px solid gainsboro;
+  margin: 7px;
+  cursor: pointer;
 }
 
 .default-btn-inner {
@@ -534,6 +563,318 @@ title {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   border: 1px solid gainsboro;
+}
+
+.group {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.group__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.group__card {
+  width: 100%;
+  max-width: 330px;
+  margin-top: 30px;
+  margin-right: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group__card-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.group__card-title {
+  background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+  padding: 15px 30px;
+  font-size: 20px;
+  color: white;
+  transform: translate(0px, -35px);
+}
+
+.group__card-subtitle {
+  color: #157fda;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.group__card-text {
+  font-size: 17px;
+  color: gray;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+}
+
+.group__link {
+  background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+  color: white;
+  margin-right: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 38px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.price {
+  background-image: url(../img/price-bg.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.price__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.price__card {
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 360px;
+  height: 460px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.price__card--active {
+  height: 580px;
+  padding: 5px;
+}
+
+.price__card--active-body {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.price__card-title {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+.price__card-subtitle {
+  color: gray;
+  font-weight: 800;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.price__card-body {
+  padding-top: 40px;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.price__card-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.price__card-icon {
+  color: #a8a8a8;
+  font-size: 18px;
+  padding-right: 12px;
+  border-right: 2px solid gainsboro;
+  margin-right: 12px;
+}
+
+.price__card-text {
+  color: #a8a8a8;
+  font-family: "Poppins", sans-serif;
+}
+
+.price__card-text--black {
+  color: black;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.price__card-btn-inner {
+  margin: auto;
+}
+
+.price__card-head {
+  background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+  padding: 30px;
+  color: white !important;
+}
+
+.price__card--active-subtitle {
+  color: white;
+}
+
+.price__text {
+  color: #bdbdbd;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid gainsboro;
+  margin-bottom: 10px;
+}
+
+.test {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../img/bg-testimonial.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.test__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.test__card {
+  margin-top: 60px;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 550px;
+}
+
+.test__card-body {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid gainsboro;
+}
+
+.test__card-body::before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #ededed;
+  border-width: 16px;
+  margin-left: -70px;
+  top: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 25px;
+  width: 40px;
+  position: absolute;
+  background-color: white;
+  pointer-events: none;
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+}
+
+.test__card-body::after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #fff;
+  border-width: 15px;
+  margin-left: -70px;
+  top: 100%;
+  left: 10%;
+  border: 1px solid gainsboro;
+  content: " ";
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  pointer-events: none;
+  background-color: #f0f0f0;
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+}
+
+.test__card-head {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.test__card-icon {
+  color: gainsboro;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.test__card-title {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.test__card-text {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.test__card-footer {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.test__card-img--circle {
+  width: 60px;
+  margin-right: 25px;
+}
+
+.test__card-footer-title {
+  color: #39b49b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.test__card-footer-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+
+.contact {
+  background-image: url(../img/Google-Maps-2468315.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact__inner {
+  background: linear-gradient(rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.93));
+  padding-top: 60px;
+  padding: 50px;
+  padding-bottom: 60px;
+  width: 50%;
+}
+
+.contact__inner-inp {
+  display: flex;
+  align-items: center;
+}
+
+.contact__inp {
+  background-color: transparent;
+  border: 0;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid white;
+  margin-right: 20px;
+  padding: 8px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.contact__inp::placeholder {
+  color: gray;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
