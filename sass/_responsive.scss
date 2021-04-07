@@ -1,0 +1,101 @@
+@media screen and (max-width:1300px) {
+    .header__list {
+        flex-direction: column;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    .header__inner {
+        height: auto !important;
+    }
+    .header__inp {
+        width: 500px !important;
+    }
+    .header__inp-btn {
+        right: 24% !important;
+        padding-right: 12px !important;
+    }
+    .header__inner-card {
+        display: none !important;
+    }
+    .header__list-form {
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
+    .home__inner {
+        padding-top: 60px;
+    }
+    .price__card {
+        max-width: none !important;
+        margin-bottom: 30px;
+        width: 90% !important;
+    }
+    .home__inner-card {
+        flex-wrap: wrap !important;
+    }
+    .home {
+        background-repeat: no-repeat;
+    }
+    .home__card {
+        width: 30% !important;
+    }
+    .test__card {
+        width: 80% !important;
+        max-width: none !important;
+    }
+    .home {
+        background-size: cover;
+    }
+}
+@media screen and(max-width:1073px) {
+    .service__block--lg {
+        width: 65% !important;
+    }
+    .service__block--sm {
+        width: 35% !important;
+    }
+    .about__block-link {
+        bottom: -756px !important;
+    }
+}
+@media screen and(max-width:1024px) {
+    .home__card {
+        width: 80% !important;
+        margin-top: 30px;
+    }
+    .about__block-link {
+        bottom: -1430px !important;
+    }
+    .group__card-subtitle {
+        margin-top: 0 !important;
+    }
+} 
+@media screen and(max-width:950px) {
+    .about__inner {
+        flex-direction: column;
+    }
+    .about__block {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__block-img {
+        width: 80% !important;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+    .about__block-link {
+        bottom: -1853px !important;
+        left: 47% !important;
+    }
+    .service__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service__block--lg, .service__block--sm {
+        width: 90% !important;
+        margin-top: 80px;
+    }
+}
