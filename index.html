@@ -21,30 +21,30 @@
                         <img class="header__logo" src="img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="inner-bars">
-                    <span class="bars-item bars-item--first"></span>
-                    <span class="bars-item bars-item--none"></span>
-                    <span class="bars-item"></span>
-                </div>
                 <div class="header__inner-card">
-                        <div class="header__card">
-                            <i class="fas fa-phone-alt header__card-icon"></i>
-                            <a class="header__card-text" href="#">88 522 22 88</a>
-                        </div>
-                        <div class="header__card">
-                            <i class="fas fa-envelope header__card-icon"></i>
-                            <a class="header__card-text" href="#">info@Lifecare.com</a>
-                        </div>
-                        <div class="header__card">
-                            <i class="far fa-clock header__card-icon"></i>
-                            <a class="header__card-text header__card-text--lg" href="#">Daily: 7:00am-8:00pm</a>
-                        </div>
+                    <div class="header__card">
+                        <i class="fas fa-phone-alt header__card-icon"></i>
+                        <a class="header__card-text" href="#">88 522 22 88</a>
+                    </div>
+                    <div class="header__card">
+                        <i class="fas fa-envelope header__card-icon"></i>
+                        <a class="header__card-text" href="#">info@Lifecare.com</a>
+                    </div>
+                    <div class="header__card">
+                        <i class="far fa-clock header__card-icon"></i>
+                        <a class="header__card-text header__card-text--lg" href="#">Daily: 7:00am-8:00pm</a>
                     </div>
                 </div>
-            </nav>
-            <nav class="header__inner">
+            </div>
+            <div onclick="bars()" class="inner-bars">
+                <span class="bars-item bars-item--first"></span>
+                <span class="bars-item bars-item--none"></span>
+                <span class="bars-item"></span>
+            </div>
+        </nav>
+        <nav class="header__inner">
                 <ul class="header__list">
-                    <div class="heaer__list-inner">
+                    <div class="header__list-inner">
                         <li class="header__list-item">
                             <a class="header__list-link" href="#home">
                                 Home
@@ -56,27 +56,27 @@
                             </a>
                         </li>
                         <li class="header__list-item">
-                            <a class="header__list-link" href="#">
+                            <a class="header__list-link" href="#service">
                                 Services
                             </a>
                         </li>
                         <li class="header__list-item">
-                            <a class="header__list-link" href="#">
+                            <a class="header__list-link" href="#group">
                                 Doctors
                             </a>
                         </li>
                         <li class="header__list-item">
-                            <a class="header__list-link" href="#">
+                            <a class="header__list-link" href="#price">
                                 Price
                             </a>
                         </li>
                         <li class="header__list-item">
-                            <a class="header__list-link" href="#">
+                            <a class="header__list-link" href="#test">
                                 Testimonials
                             </a>
                         </li>
                         <li class="header__list-item">
-                            <a class="header__list-link" href="#">
+                            <a class="header__list-link" href="#contact">
                                 Contact
                             </a>
                         </li>
@@ -175,7 +175,7 @@
             </div>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="container">
             <div class="service__inner">
                 <div class="service__block service__block--lg">
@@ -236,7 +236,7 @@
             </div>
         </div>
     </section>
-    <section class="group">
+    <section class="group" id="group">
         <div class="container">
             <div class="heading">
                 <img class="home__logo" src="img/icon-logo.png" alt="">
@@ -307,7 +307,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="price__inner">
                 <div class="price__card">
@@ -399,7 +399,7 @@
             </div>
         </div>
     </section>
-    <section class="test">
+    <section class="test" id="test">
         <div class="container">
             <div class="heading">
                 <img class="home__logo" src="img/icon-logo.png" alt="">
@@ -503,7 +503,7 @@
         <h1 class="title">Get in Touch</h1>
         <div class="title-border"></div>
     </div>
-    <section class="contact">
+    <section class="contact" id="contact">
             <div class="contact__inner">
                 <form class="contact__form">
                     <div class="contact__inner-inp">
@@ -591,5 +591,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

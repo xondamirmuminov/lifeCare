@@ -6,7 +6,7 @@
   }
 
   .header__inner {
-    height: auto !important;
+    height: 40vh !important;
   }
 
   .header__inp {
@@ -57,6 +57,10 @@
   .home {
     background-size: cover;
   }
+
+  .footer__block {
+    margin-top: 60px !important;
+  }
 }
 @media screen and (max-width: 1073px) {
   .service__block--lg {
@@ -78,7 +82,7 @@
   }
 
   .about__block-link {
-    bottom: -1430px !important;
+    bottom: -710px !important;
   }
 
   .group__card-subtitle {
@@ -106,7 +110,7 @@
   }
 
   .about__block-link {
-    bottom: -1853px !important;
+    bottom: -1455px !important;
     left: 47% !important;
   }
 
@@ -118,6 +122,107 @@
   .service__block--lg, .service__block--sm {
     width: 90% !important;
     margin-top: 80px;
+  }
+
+  .inner-bars {
+    opacity: 1 !important;
+    position: relative !important;
+  }
+
+  .header__list {
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .header__list-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    display: flex !important;
+    width: 100% !important;
+  }
+
+  .header__inner {
+    padding-right: 50px !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+  }
+
+  .header__list-form {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+  }
+
+  .header__inp {
+    width: 300px !important;
+  }
+
+  .header__inp-btn {
+    right: 1% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer__footer-inner {
+    flex-direction: column;
+  }
+
+  .footer__footer-title {
+    margin-bottom: 25px !important;
+  }
+
+  .service__card {
+    max-width: 280px !important;
+  }
+}
+@media screen and (max-width: 718px) {
+  .service__card {
+    max-width: 90% !important;
+  }
+
+  .header__inp {
+    width: 100% !important;
+  }
+
+  .header__list-form {
+    left: 250px !important;
+  }
+
+  .contact__inp, .contact__textarea {
+    width: 100% !important;
+  }
+
+  .footer__footer-title {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 620px) {
+  .about__block-link {
+    bottom: -1750px !important;
+  }
+
+  .group__card {
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 388px) {
+  .about__block-link {
+    bottom: -1923px !important;
+  }
+
+  .about__card {
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 378px) {
+  .about__block-link {
+    bottom: -1787px !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .about__block-link {
+    bottom: -2196px !important;
   }
 }
 .d-blue {
@@ -225,10 +330,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 44px;
+  padding-top: 4px;
   border-radius: 4px;
+  opacity: 0;
   cursor: pointer;
+  position: absolute;
+}
+
+.inner-bars--active {
+  position: relative;
+}
+
+.inner-bars--active .bars-item--none {
+  display: none;
+}
+
+.inner-bars--active .bars-item--first {
+  transform: rotate(-47deg) translate(-18px, 24px) !important;
+  margin: 0 !important;
+  transform-origin: 0px !important;
+}
+
+.inner-bars--active .bars-item {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: 1s;
 }
 
 .bars-item {
@@ -236,7 +363,7 @@ body {
   display: inline-block;
   height: 4px;
   border-radius: 6px;
-  width: 30px;
+  width: 34px;
   margin-top: 6px;
 }
 
@@ -246,6 +373,14 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.637);
+}
+
+.header__list--active {
+  width: 100% !important;
+  height: 100% !important;
+  top: 80px !important;
+  transition: 2s !important;
+  opacity: 1 !important;
 }
 
 .header__head {
@@ -323,12 +458,24 @@ body {
   position: relative;
 }
 
+.header__inner--active {
+  background: #157fda;
+  display: flex !important;
+  transition: 2s !important;
+  position: absolute !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  opacity: 1 !important;
+  padding-bottom: 20px !important;
+}
+
 .header__list {
   display: flex;
   align-items: center;
 }
 
-.heaer__list-inner {
+.header__list-inner {
   display: flex;
   align-items: center;
 }

@@ -5,7 +5,7 @@
         margin: auto;
     }
     .header__inner {
-        height: auto !important;
+        height: 40vh !important;
     }
     .header__inp {
         width: 500px !important;
@@ -45,6 +45,9 @@
     .home {
         background-size: cover;
     }
+    .footer__block {
+        margin-top: 60px !important;
+    }
 }
 @media screen and(max-width:1073px) {
     .service__block--lg {
@@ -63,7 +66,7 @@
         margin-top: 30px;
     }
     .about__block-link {
-        bottom: -1430px !important;
+        bottom: -710px !important;
     }
     .group__card-subtitle {
         margin-top: 0 !important;
@@ -87,7 +90,7 @@
         margin-top: 60px;
     }
     .about__block-link {
-        bottom: -1853px !important;
+        bottom: -1455px !important;
         left: 47% !important;
     }
     .service__inner {
@@ -97,5 +100,91 @@
     .service__block--lg, .service__block--sm {
         width: 90% !important;
         margin-top: 80px;
+    }
+    .inner-bars {
+        opacity: 1 !important;
+        position: relative !important;
+    }
+    .header__list {
+        opacity: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+    .header__list-inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        display: flex !important;
+        width: 100% !important;
+    }
+    .header__inner {
+       padding-right: 50px !important;
+       width: 0 !important;
+       height: 0 !important;
+       opacity: 0 !important;
+    }
+    .header__list-form {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    }
+    .header__inp {
+        width: 300px !important;
+    }
+    .header__inp-btn {
+        right: 1% !important;
+    }
+}
+@media screen and(max-width:800px) {
+    .footer__footer-inner {
+        flex-direction: column;
+    }
+    .footer__footer-title {
+        margin-bottom: 25px !important;
+    }
+    .service__card {
+        max-width: 280px !important;
+    }
+}
+@media screen and(max-width:718px) {
+    .service__card {
+        max-width: 90% !important;
+    }
+    .header__inp {
+        width: 100% !important; 
+    }
+    .header__list-form {
+        left: 250px !important;
+    }
+    .contact__inp, .contact__textarea {
+        width: 100% !important;
+    }
+    .footer__footer-title {
+        text-align: center !important;
+    }
+}
+@media screen and(max-width:620px) {
+    .about__block-link {
+        bottom: -1750px !important;
+    }
+    .group__card {
+        margin-right: 0 !important;
+    }
+} 
+@media screen and(max-width:388px) {
+    .about__block-link {
+        bottom: -1923px !important;
+    }
+    .about__card {
+        margin-right: 0 !important;
+    }
+}
+@media screen and(max-width:378px) {
+    .about__block-link {
+        bottom: -1787px !important;
+    }
+}
+@media screen and(max-width:370px) {
+    .about__block-link {
+        bottom: -2196px !important;
     }
 }
